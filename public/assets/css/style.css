@@ -147,7 +147,8 @@ th {
     color: #fff;
     flex-grow: 1;
     flex-shrink: 0;
-    font-size: 1.5rem;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 1;
     text-align: center;
 }
@@ -158,4 +159,35 @@ th {
     border-bottom-right-radius: 3px;
     border-top: none;
     background-color: #fff;
+}
+
+.remove-row {
+  text-align: right;
+}
+
+td.remove-row.sheet-remove {
+  text-align: center;
+}
+
+.fa-trash-alt {
+  cursor: pointer;
+  color: #9e9e9e;
+}
+
+
+input.input.sheet-input {
+  border: none;
+  border-radius: 0;
+}
+
+td.sheet-cell {
+    padding: 0;
+}
+
+.navbar-item img {
+    max-height: 40px;
+}
+
+.navbar-item {
+    align-items: flex-start;
 }
