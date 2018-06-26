@@ -13,8 +13,8 @@ $("#closeModal").click(function() {
 
 
 // clears form field
-$( "#row-1" ).click(function() {
-  $('.row-1').val('');
+$(document).on('click', '.sheet-remove',function() {
+  $(this).siblings().val('');
   console.log('you clicked');
 });
 
