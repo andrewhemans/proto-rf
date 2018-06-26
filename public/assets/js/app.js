@@ -3,7 +3,7 @@ $("#showModal").click(function() {
   $(".modal").addClass("is-active");
 });
 
-$(".delete").click(function() {
+$(".close-icon").click(function() {
    $(".modal").removeClass("is-active");
 });
 
@@ -13,7 +13,7 @@ $("#closeModal").click(function() {
 
 
 // clears form field
-$('.sheet-remove').on('click',function() {
+$(document).on('click', '.sheet-remove', function() {
   $(this).siblings().find('input').val('');
   console.log('you clicked');
 });

@@ -21,18 +21,28 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.main-body {
+
+}
+
 .navbar {
     background-color: #479D53;
     height: 100vh;
     min-width: 60px;
     position: fixed;
     z-index: 30;
+    top: 0;
 }
 
 .section {
     margin-left: 60px;
     padding: 0;
 }
+
+.body-section {
+  margin-top: 64px;
+}
+
 
 .container {
     margin: 0 28px;
@@ -64,6 +74,15 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+section.section.header {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 64px);
+    background-color: #fff;
+    z-index: 30;
+    left: 4px;
 }
 
 .header-right {
@@ -149,6 +168,7 @@ th {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-color: #479D53;
+    padding: 16px;
   }
 
   .modal-card-title {
@@ -231,4 +251,19 @@ td.sheet-cell {
     align-items: center;
     justify-content: space-around;
     height: 100vh;
+}
+
+button.close-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.close-icon > .fa-times {
+    color: #fff;
+    font-size: 20px;
+}
+
+button.close-icon {
+    background-color: transparent;
+    border: none;
 }
