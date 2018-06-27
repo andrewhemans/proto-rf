@@ -123,7 +123,7 @@ h1.section-title {
 }
 
 .field:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 td {
@@ -151,7 +151,7 @@ th {
   height: 100px;
   border: 1px solid #eaeaea;
   border-radius: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
 }
 
@@ -163,10 +163,18 @@ th {
     left: 0;
 }
 
+.modal-card {
+    width: 760px;
+}
+
+.modal-card-body {
+    padding: 0;
+}
+
 .modal-card-head {
     border-bottom: none;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: #479D53;
     padding: 16px;
   }
@@ -183,10 +191,15 @@ th {
 
   .modal-card-foot {
     justify-content: flex-end;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     border-top: none;
     background-color: #fff;
+}
+
+.with-list {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .remove-row {
@@ -218,6 +231,19 @@ td.sheet-cell {
 
 .navbar-item {
     align-items: flex-start;
+    color: #fff;
+    font-size: 22px;
+}
+
+.navbar-brand{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.nav-icon {
+  margin: 8px 0;
 }
 
 .label-with-tooltip {
@@ -266,4 +292,101 @@ button.close-icon {
 button.close-icon {
     background-color: transparent;
     border: none;
+}
+
+button.button.dropdown-button {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    vertical-align: top;
+}
+
+.feature-tags {
+    margin: 20px 0;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.column.ft-left {
+    padding-left: 0;
+}
+
+.column.ft-right {
+    padding-right: 0;
+}
+
+.test-list-header {
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 12px;
+}
+
+.column.is-4.test-list-column {
+    border-right: 1px solid #eaeaea;
+    padding: 0;
+}
+
+.columns.modal-body-column {
+    margin: 0;
+}
+
+.modal-form {
+    padding: 20px;
+}
+
+.next-test-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.next-test-buttons .button:not(:last-child) {
+    margin-right: 12px;
+}
+
+.test-list {
+
+}
+
+.test-list > ol > li {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    padding: 0 12px;
+    justify-content: space-between;
+}
+
+.test-list > ol > li:hover {
+  background-color: #F7F9FA;
+  cursor: pointer;
+}
+
+body {
+  counter-reset: section;                     /* Set a counter named 'section', and its initial value is 0. */
+}
+
+.test-list > ol > li > p::before {
+  counter-increment: section;                 /* Increment the value of section counter by 1 */
+  content: counter(section);                  /* Display the value of section counter */
+  padding-right: 6px;
+}
+
+.trash {
+  visibility: hidden;
 }

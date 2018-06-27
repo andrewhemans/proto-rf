@@ -23,3 +23,20 @@ $( "#addTests" ).click(function() {
 $( ".spreadsheet" ).append( '<tr><td class="sheet-cell"><input class="input sheet-input" type="text" placeholder=""></td><td class="sheet-cell"><input class="input sheet-input" type="text" placeholder=""></td><td class="sheet-cell"><input class="input sheet-input" type="text" placeholder=""></td><td class="sheet-cell"><input class="input sheet-input" type="text" placeholder=""></td><td class="sheet-cell"><input class="input sheet-input" type="text" placeholder=""></td><td class="remove-row sheet-remove" width="36px"><i class="far fa-trash-alt"></i></td></tr>' );
 console.log('you clicked');
 });
+
+// let dropdown = document.querySelector('.dropdown');
+// dropdown.addEventListener('click', function(event) {
+//     event.stopPropagation();
+//     dropdown.classList.toggle('is-active');
+// });
+
+
+$('.list-item').hover(function(){
+    $(this).find( ".trash" ).css( "visibility", "visible" );
+},function(){
+    $(this).find( ".trash" ).css( "visibility", "hidden" );
+});
+
+
+
+// tags
