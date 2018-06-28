@@ -35,12 +35,13 @@ body {
 }
 
 .section {
-    margin-left: 60px;
+    margin-left: 64px;
     padding: 0;
 }
 
 .body-section {
-  margin-top: 64px;
+  margin-top: 57px;
+  height: calc(100vh - 57px);
 }
 
 
@@ -82,7 +83,7 @@ section.section.header {
     width: calc(100% - 64px);
     background-color: #fff;
     z-index: 30;
-    left: 4px;
+    left: 0;
 }
 
 .header-right {
@@ -148,7 +149,7 @@ th {
   position: relative;
   overflow: auto;
   width: 100%;
-  height: 100px;
+  height: 180px;
   border: 1px solid #eaeaea;
   border-radius: 3px;
   margin-bottom: 20px;
@@ -334,7 +335,7 @@ button.button.dropdown-button {
     padding: 0 12px;
 }
 
-.column.is-4.test-list-column {
+.column.test-list-column {
     border-right: 1px solid #eaeaea;
     padding: 0;
 }
@@ -343,8 +344,14 @@ button.button.dropdown-button {
     margin: 0;
 }
 
+.columns.body-column {
+    margin: 0;
+    height: 100%;
+}
+
 .modal-form {
     padding: 20px;
+    max-width: 700px;
 }
 
 .next-test-buttons {
@@ -389,4 +396,9 @@ body {
 
 .trash {
   visibility: hidden;
+}
+
+.container.body-container {
+    margin: 0;
+    height: 100%
 }

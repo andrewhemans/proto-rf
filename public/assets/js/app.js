@@ -31,12 +31,6 @@ console.log('you clicked');
 // });
 
 
-$('.list-item').hover(function(){
-    $(this).find( ".trash" ).css( "visibility", "visible" );
-},function(){
-    $(this).find( ".trash" ).css( "visibility", "hidden" );
-});
-
 
 
 // tags

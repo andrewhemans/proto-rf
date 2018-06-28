@@ -68,3 +68,77 @@ function clearInputs() {
   $("#modalNotes").val("");
   editor.setValue("");
 }
+
+// login test values
+
+var titleLogin = "Login"
+
+
+// test list count badge
+
+var testCount;
+
+function countTests() {
+  testCount = $("#testList").children().length;
+
+  $('#badge').attr('data-badge', testCount); //setter
+  console.log($("#badge").data("badge"));
+
+  if (testCount === 0) {
+    console.log("no tests");
+    $('#badge').removeClass("badge")
+  }
+}
+
+countTests();
+
+
+// delete on page view
+
+$(document).on('click', '.delete-div',function() {
+  $(this).closest('li').remove();
+  // console.log('delete li');
+  countTests();
+});
+
+// add on page view
+
+$( "#pageSaveNew" ).click(function() {
+  console.log('save new');
+  saveInputs();
+  // closeAndSave();
+  clearInputs();
+  addTestToList();
+  countTests();
+});
+
+
+function addTestToList() {
+
+  console.log("add test to list");
+
+  var listItem = $("<li>");
+  $(listItem).addClass("list-item")
+
+  $( "#testList" ).append(listItem);
+
+  $( listItem ).append("<p>" + modalTitle + "</p>");
+
+  var deleteDiv = $("<div>");
+
+  $( deleteDiv).addClass("delete-div trash");
+  $( deleteDiv ).append('<i class="far fa-trash-alt"></i>');
+
+  $( listItem ).append( deleteDiv );
+
+};
+
+
+$('#testList').on('mouseenter','.list-item',function() {
+    $(this).find( ".trash" ).css( "visibility", "visible" );
+    console.log("this works");
+});
+
+$('#testList').on('mouseleave','.list-item',function() {
+    $(this).find( ".trash" ).css( "visibility", "hidden" );
+});
