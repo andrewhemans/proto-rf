@@ -72,7 +72,40 @@ function clearInputs() {
 // login test values
 
 var titleLogin = "Login"
+var stepsLogin = ["Click on Login button", "Type in email adress in email field", "Type in password in the password field", "Click the Login button"]
 
+var titleSignup = "Sign-up"
+var stepsSignup = ["Click on Sign Up button", "Type in name in the name field", "Type in email adress in email field", "Type in password in the password field", "Click the Sign Up button"]
+
+var titleEmail = "Fill out mailing list form"
+var stepsEmail = ["Click on Join Mailing List button", "Type in name in the name field", "Type in email adress in email field", "Click the Sign Up button"]
+
+
+
+$(document).on('click', '.list-item',function() {
+
+  var theTitle = $(this).find( "p" ).text();
+
+  // console.log(theTitle);
+
+  if ( theTitle === "Login") {
+
+    $("#modalTitle").val(titleLogin);
+    editor.setValue(stepsLogin.join('\n'));
+  }
+
+  if ( theTitle === "Sign-up") {
+
+    $("#modalTitle").val(titleSignup);
+    editor.setValue(stepsSignup.join('\n'));
+  }
+
+  if ( theTitle === "Fill out mailing list form") {
+
+    $("#modalTitle").val(titleEmail);
+    editor.setValue(stepsEmail.join('\n'));
+  }
+});
 
 // test list count badge
 
