@@ -503,10 +503,21 @@ button.new-button:hover {
     margin: 0;
 }
 
+.column.test-type-toggle:first-child {
+    margin-right: 10px;
+}
+.column.test-type-toggle:last-child {
+    margin-left: 10px;
+}
+
 .column.test-type-toggle {
     font-size: 48px;
 }
 
 .column.test-type-toggle > p {
     font-size: 13px;
+}
+
+.column.test-type-toggle.toggle-active {
+    border-color: #608b9f;
 }

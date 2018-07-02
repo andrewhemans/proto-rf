@@ -12,6 +12,18 @@ $("#closeModal").click(function() {
 });
 
 
+// device toggle
+
+$("#desktop").click(function() {
+  $("#desktop").addClass("toggle-active");
+   $("#app").removeClass("toggle-active");
+});
+
+$("#app").click(function() {
+  $("#app").addClass("toggle-active");
+   $("#desktop").removeClass("toggle-active");
+});
+
 // clears form field
 $(document).on('click', '.sheet-remove', function() {
   $(this).siblings().find('input').val('');
