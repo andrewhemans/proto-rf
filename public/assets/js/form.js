@@ -4,6 +4,8 @@ var modalExpect;
 var modalNotes;
 var modalSteps;
 
+var batchTitle;
+
 // modal form
 $( "#modalNew" ).click(function() {
   console.log('modal click');

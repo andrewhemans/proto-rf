@@ -241,6 +241,7 @@ td.sheet-cell {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .nav-icon {
@@ -403,4 +404,109 @@ body {
 .container.body-container {
     margin: 0;
     height: 100%
+}
+
+
+
+nav.navbar.secondary {
+    margin-left: 60px;
+    background-color: #3f8d4a;
+    min-width: 240px;
+    padding: 10px;
+}
+
+section.section.all-tests-body {
+    margin-left: 300px;
+    margin-top: 70px;
+}
+
+section.section.all-tests-header {
+    border-bottom: 1px solid #EFEFEF;
+    padding: 0 28px;
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+}
+
+.container.all-tests-container {
+    width: calc(100% - 60px);
+}
+
+td.all-tests-td {
+    padding: 1.25em .75em;
+    font-size: 14px;
+}
+
+.navbar-item.all-tests {
+    width: 100%;
+    font-size: 14px;
+}
+
+.navbar-item.all-tests.test-writing-tab {
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 20%);
+    border-radius: 50px;
+    padding: 3px 10px;
+    margin: 10px 0;
+}
+
+.navbar-item.all-tests.side-tab {
+  padding: 3px 10px;
+  margin: 10px 0;
+}
+
+
+.navbar-item.all-tests.side-tab:hover {
+  background-color: rgba(0, 0, 0, 20%);
+  border-radius: 50px;
+
+}
+
+.navbar-item.all-tests.new-button {
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.new-button {
+    background-color: transparent;
+    border-color: #fff;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 1;
+}
+
+button.new-button:hover {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.column.all-tests-form {
+    margin: 20px;
+    padding: 0;
+}
+
+.column.test-type-toggle {
+    border: 2px solid #eaeaea;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 170px;
+    justify-content: space-around;
+}
+
+.columns.test-type {
+    margin: 0;
+}
+
+.column.test-type-toggle {
+    font-size: 48px;
+}
+
+.column.test-type-toggle > p {
+    font-size: 13px;
 }
