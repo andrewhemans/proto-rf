@@ -46,3 +46,30 @@ console.log('you clicked');
 
 
 // tags
+
+// test list count badge
+
+var testCount;
+
+function countTests() {
+  testCount = $("#testList").children().length;
+
+  $('#badge').attr('data-badge', testCount); //setter
+  console.log($("#badge").data("badge"));
+
+  if (testCount === 0) {
+    console.log("no tests");
+    $('#badge').removeClass("badge")
+  }
+}
+
+countTests();
+
+
+// delete on page view
+
+$(document).on('click', '.delete-div',function() {
+  $(this).closest('li').remove();
+  // console.log('delete li');
+  countTests();
+});

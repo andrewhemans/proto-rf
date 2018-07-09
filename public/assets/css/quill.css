@@ -1,0 +1,22 @@
+
+
+#editor {
+    position: inherit;
+    height: 180px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.ql-editor ol, .ql-editor ul {
+    padding-left: 0;
+}
+/*
+.ql-toolbar.ql-snow {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+} */
+
+.ql-container {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}

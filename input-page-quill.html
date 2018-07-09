@@ -10,6 +10,11 @@
     <!-- <link rel="stylesheet" href="node_modules/bulma-tagsinput/dist/css/bulma-tagsinput.min.css" type="text/css"> -->
 
     <link rel="stylesheet" href="public/assets/css/style.css" type="text/css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/assets/css/quill.css" type="text/css">
+
+    <link rel="stylesheet" href="public/assets/css/tags.css" type="text/css">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="shortcut icon" href="public/assets/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="public/assets/images/favicon.png" type="image/x-icon">
@@ -84,51 +89,50 @@
           <div class="field">
             <label class="label">Environment (URL)</label>
             <div class="control">
-              <input class="input" type="text" placeholder="www.google.com">
+              <input class="input" type="text" value="www.google.com">
             </div>
           </div>
 
           <label class="label">Test Outline</label>
-          <div class="ace-box">
-            <div id="editor" id="modalSteps" >Steps</div>
-          </div>
 
-          <div class="columns">
-            <div class="column">
-              <div class="field">
-                <label class="label">Feature</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Login">
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="field">
-                <label class="label">Tags</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Nightly">
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="field">
-                <label class="label">Stubs</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Login">
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- Put Quill Here -->
+          <div id="editor">
+            <ol>
+              <li>here is a step</li>
+              <li class="ql-indent-1">with some additional info</li>
+              <li class="ql-indent-1">and a bit more</li>
+              <li>here is the next step</li>
+              <li>etc</li>
+            </ol>
+         </div>
 
-          <!-- <div class="field">
-            <label class="label">Expected Result</label>
-            <div class="control">
-              <input class="input" id="modalExpect" type="text" placeholder="Should Login">
-            </div>
-          </div> -->
+         <div class="columns">
+           <div class="column">
+             <div class="field">
+               <label class="label">Feature</label>
+               <div class="control">
+                 <input class="input" type="text" placeholder="Login">
+               </div>
+             </div>
+           </div>
+           <div class="column">
+             <div class="field">
+               <label class="label">Tags</label>
+               <div class="control">
+                 <input class="input" type="text" placeholder="Nightly">
+               </div>
+             </div>
+           </div>
+           <div class="column">
+             <div class="field">
+               <label class="label">Stubs</label>
+               <div class="control">
+                 <input class="input" type="text" placeholder="Login">
+               </div>
+             </div>
+           </div>
+         </div>
 
-          <!-- <label class="label">Notes</label>
-          <textarea class="textarea" id="modalNotes" placeholder="e.g. Hello world"></textarea> -->
 
           <div class="next-test-buttons">
             <!-- <button class="button close-save" id="closeModal"><span class="button-text">Close</span></button> -->
@@ -141,18 +145,21 @@
 
   </section>
   <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
   <script src="public/assets/js/app.js" type="text/javascript"></script>
+    <script src="public/assets/js/tags.js" type="text/javascript"></script>
+  <script src="public/assets/js/form.js" type="text/javascript"></script>
 
-  <!-- <script type="text/javascript" src="node_modules/bulma-tagsinput/dist/js/bulma-tagsinput.min.js"></script> -->
+  <!-- Include the Quill library -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
-  <!-- <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script> -->
+  <!-- Initialize Quill editor -->
   <script>
-    var editor = ace.edit("editor");
-    // editor.setTheme("ace/theme/TextMate");
-    editor.session.setMode("ace/mode/text");
-    editor.resize(true)
+    var quill = new Quill('#editor', {
+      theme: 'snow',
+      "modules": {
+          "toolbar": false
+      }
+    });
   </script>
-    <script src="public/assets/js/form.js" type="text/javascript"></script>
   </body>
 </html>
