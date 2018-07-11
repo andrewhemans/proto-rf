@@ -42,113 +42,117 @@
   <section class="section body-section">
     <div class="container body-container">
       <div class="columns body-column">
-        <div class="column is-3 test-list-column">
-          <div class="test-list-header">
-            <p>Test Title</p>
-            <div class="new-test-btn">
-              <i class="fas fa-plus"></i>
+
+
+        <div class="body-left">
+          <div class="column is-3 test-list-column">
+            <div class="test-list-header">
+              <p>Test Title</p>
+              <div class="new-test-btn">
+                <i class="fas fa-plus"></i>
+              </div>
+
             </div>
+            <div class="test-list">
+              <ol id="testList">
+                <li class="list-item">
+                  <p>Login</p>
+                  <div class="delete-div">
+                    <i class="far fa-trash-alt trash"></i>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <p>Sign-up</p>
+                  <div class="delete-div">
+                    <i class="far fa-trash-alt trash"></i>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <p>Fill out mailing list form</p>
+                  <div class="delete-div">
+                    <i class="far fa-trash-alt trash"></i>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="test-list-footer">
 
-          </div>
-          <div class="test-list">
-            <ol id="testList">
-              <li class="list-item">
-                <p>Login</p>
-                <div class="delete-div">
-                  <i class="far fa-trash-alt trash"></i>
-                </div>
-              </li>
-              <li class="list-item">
-                <p>Sign-up</p>
-                <div class="delete-div">
-                  <i class="far fa-trash-alt trash"></i>
-                </div>
-              </li>
-              <li class="list-item">
-                <p>Fill out mailing list form</p>
-                <div class="delete-div">
-                  <i class="far fa-trash-alt trash"></i>
-                </div>
-              </li>
-            </ol>
-          </div>
-          <div class="test-list-footer">
-
-          </div>
-        </div>
-
-
-        <div class="column modal-form">
-          <div class="field">
-            <label class="label">Test Title</label>
-            <div class="control">
-              <input class="input" id="modalTitle" type="text" placeholder="Login Test">
             </div>
           </div>
 
 
-          <label class="label">Test Outline</label>
-
-          <!-- Put Quill Here -->
-          <div id="editor">
-            <ol>
-              <li>here is a step</li>
-              <li class="ql-indent-1">with some additional info</li>
-              <li class="ql-indent-1">and a bit more</li>
-              <li>here is the next step</li>
-              <li>etc</li>
-            </ol>
-         </div>
-
-         <section class="accordions">
-            <article class="accordion">
-              <div class="accordion-header toggle">
-                <p>More Options</p>
+          <div class="column modal-form">
+            <div class="field">
+              <label class="label">Test Title</label>
+              <div class="control">
+                <input class="input" id="modalTitle" type="text" placeholder="Login Test">
               </div>
-              <div class="accordion-body">
-                <div class="accordion-content">
-                  <div class="field">
-                    <label class="label">URL</label>
-                    <div class="control">
-                      <input class="input" type="text" value="www.google.com">
-                    </div>
-                  </div>
+            </div>
 
-                  <div class="columns">
-                    <div class="column">
-                      <div class="field">
-                        <label class="label">Feature</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Login">
-                        </div>
+
+            <label class="label">Test Outline</label>
+
+            <!-- Put Quill Here -->
+            <div id="editor">
+              <ol>
+                <li>here is a step</li>
+                <li class="ql-indent-1">with some additional info</li>
+                <li class="ql-indent-1">and a bit more</li>
+                <li>here is the next step</li>
+                <li>etc</li>
+              </ol>
+           </div>
+
+           <section class="accordions">
+              <article class="accordion">
+                <div class="accordion-header toggle">
+                  <p>More Options</p>
+                </div>
+                <div class="accordion-body">
+                  <div class="accordion-content">
+                    <div class="field">
+                      <label class="label">URL</label>
+                      <div class="control">
+                        <input class="input" type="text" value="www.google.com">
                       </div>
                     </div>
-                    <div class="column">
-                      <div class="field">
-                        <label class="label">Embedded Tests</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Login">
+
+                    <div class="columns">
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Feature</label>
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Login">
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="column">
-                      <div class="field">
-                        <label class="label">Tags</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Nightly">
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Embedded Tests</label>
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Login">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div class="field">
+                          <label class="label">Tags</label>
+                          <div class="control">
+                            <input class="input" type="text" placeholder="Nightly">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </article>
-          </section>
+              </article>
+            </section>
 
 
-          <div class="next-test-buttons">
-            <!-- <button class="button close-save" id="closeModal"><span class="button-text">Close</span></button> -->
-            <button class="button is-primary" id="pageSaveNew"><span class="button-text" >Save and Next</span></button>
+            <div class="next-test-buttons">
+              <!-- <button class="button close-save" id="closeModal"><span class="button-text">Close</span></button> -->
+              <button class="button is-primary" id="pageSaveNew"><span class="button-text" >Save and Next</span></button>
+            </div>
           </div>
         </div>
 
