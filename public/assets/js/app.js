@@ -11,6 +11,20 @@ $("#closeModal").click(function() {
    $(".modal").removeClass("is-active");
 });
 
+$(".accordion-header").click(function() {
+  if ($("#accordion-arrow").hasClass("fa-angle-down")) {
+    $("#accordion-arrow").removeClass("fa-angle-down");
+    $("#accordion-arrow").addClass("fa-angle-up");
+  } else if ($("#accordion-arrow").hasClass("fa-angle-up")) {
+    $("#accordion-arrow").removeClass("fa-angle-up");
+    $("#accordion-arrow").addClass("fa-angle-down");
+  }
+
+});
+
+
+
+
 
 // device toggle
 

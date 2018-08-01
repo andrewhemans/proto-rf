@@ -44,6 +44,10 @@ body {
   height: calc(100vh - 57px);
 }
 
+.setup-body-section {
+  padding-top: 30px;
+  height: calc(100vh - 86px);
+}
 
 .container {
     margin: 0 28px;
@@ -77,6 +81,16 @@ body {
   justify-content: space-between;
 }
 
+.setup-header {
+  /* border-bottom: 1px solid #EFEFEF; */
+  padding: 20px;
+  /* height: 57px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 section.section.header {
     position: fixed;
     top: 0;
@@ -94,6 +108,14 @@ section.section.header {
     width: 150px;
 }
 
+.setup-header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 150px; */
+}
+
 .button {
   font-size: 14px;
   font-weight: 600;
@@ -106,6 +128,18 @@ section.section.header {
 .button.is-primary {
   background-color: #199AD9;
 
+}
+
+.button.is-flat {
+  background-color: #FFF;
+  border: none;
+  color: #199AD9;
+  margin: 20px 12px;
+  padding: 2px;
+}
+
+.button.is-flat > .button-text > .fa-plus{
+  color: #199AD9;
 }
 
 .button.is-primary:hover {
@@ -137,6 +171,7 @@ th {
 
 .table td, .table th {
     padding: 0.65em .75em;
+    border-color: #EFEFEF;
 }
 
 .table-buttons {
@@ -329,7 +364,7 @@ button.button.dropdown-button {
 }
 
 .test-list-header {
-    background-color: #eaeaea;
+    background-color: #F7F7F7;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -359,7 +394,7 @@ button.button.dropdown-button {
 
 .modal-form {
     padding: 20px;
-    max-width: 600px;
+    width: 600px;
 }
 
 .next-test-buttons {
@@ -437,12 +472,22 @@ section.section.all-tests-header {
 }
 
 .container.all-tests-container {
-    width: calc(100% - 60px);
+    width: calc(100% - 60px)!important;
+    max-width: 100%!important;
 }
 
 td.all-tests-td {
-    padding: 1.25em .75em;
+    padding: 0.75em 0.75em 0.4em;
     font-size: 14px;
+    line-height: 2;
+}
+
+.bubble-td {
+padding-top: 18px!important;
+  }
+
+  td.all-tests-td.returned-td > img {
+    margin-top: 3px;
 }
 
 .navbar-item.all-tests {
@@ -540,3 +585,121 @@ button.new-button:hover {
     display: flex;
     flex-direction: row;
 }
+
+.list-of-tests {
+    height: 50%;
+    overflow: scroll;
+}
+
+.fa-plus, .fa-pencil-alt, .fa-angle-down, .fa-angle-up {
+  color: #b6b6b6;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+p.info-header {
+    padding: 20px 12px 10px;
+    font-size: 13px;
+}
+
+p.info-item {
+    padding: 0px 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.test-list-header > p {
+    font-size: 14px;
+}
+
+.accordions .accordion .accordion-header {
+    background-color: #F7F7F7;
+    border-radius: 3px 3px 0 0;
+    color: #333;
+    font-size: 13px;
+    padding: .6em .75em;
+}
+
+.accordions .accordion .accordion-header+.accordion-body {
+    color: #333;
+    border: 1px solid #F7F7F7;
+    border-radius: 3px;
+}
+
+.accordions .accordion {
+    background-color: #fff;
+}
+
+.fa-chevron-left {
+  color: #b6b6b6;
+}
+
+.bubble {
+    width: .8em;
+    height: .8em;
+    border-radius: .5em;
+}
+
+.bubble.grey {
+  background-color: #F7F7F7;
+  border: 1px solid #b6b6b6;
+}
+
+.bubble.green {
+  background-color: #87B951;
+  border: 1px solid #87B951;
+}
+
+.bubble-col {
+  width: 30px;
+}
+
+.id-col {
+  width: 60px;
+}
+
+.title-col {
+    width: 50%;
+}
+
+.table thead th {
+    color: #b6b6b6;
+    font-size: 12px;
+    font-weight: 400;
+    border-width: 0 0 1px;
+    border-color: #EFEFEF;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-left > .title {
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.tests-returned {
+    padding: 2px;
+    border: 1px solid #e1e1e1;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    width: 50px;
+    text-align: center;
+    margin-top: -3px;
+margin-bottom: 3px;
+  }
+
+  /* .returned-td {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  } */
+
+/* from marketing website */
+  /* .u-diagonal-gradient--green-to-blue {
+    background: #00b95a;
+    background-image: linear-gradient(to bottom right,#00b95a 0,#08b2e3);
+} */

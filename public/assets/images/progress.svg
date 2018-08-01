@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85px" height="22px" viewBox="0 0 85 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>progress</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="81" height="18"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Testwriting-List" transform="translate(-1058.000000, -153.000000)">
+            <g id="progress" transform="translate(1058.000000, 153.000000)">
+                <rect id="Rectangle-2" stroke="#EFEFEF" x="0.5" y="0.5" width="84" height="21" rx="2"></rect>
+                <g id="Group-7" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)">
+                        <g transform="translate(-7.000000, -5.000000)">
+                            <rect id="Rectangle-3" fill="#F7F9FA" x="7" y="5" width="81" height="18"></rect>
+                            <g id="Group-6" stroke-width="1" fill="none">
+                                <rect id="Rectangle-4" fill="#EFEFEF" transform="translate(12.994165, 12.994165) rotate(45.000000) translate(-12.994165, -12.994165) " x="9.99416485" y="-2.38235931" width="6" height="30.7530483"></rect>
+                                <rect id="Rectangle-4-Copy" fill="#EFEFEF" transform="translate(29.807743, 14.807743) rotate(45.000000) translate(-29.807743, -14.807743) " x="26.8077426" y="-3.13356781" width="6" height="35.8826208"></rect>
+                                <rect id="Rectangle-4-Copy-2" fill="#EFEFEF" transform="translate(48.807743, 14.807743) rotate(45.000000) translate(-48.807743, -14.807743) " x="45.8077426" y="-3.13356781" width="6" height="35.8826208"></rect>
+                                <rect id="Rectangle-4-Copy-3" fill="#EFEFEF" transform="translate(66.807743, 14.807743) rotate(45.000000) translate(-66.807743, -14.807743) " x="63.8077426" y="-3.13356781" width="6" height="35.8826208"></rect>
+                                <rect id="Rectangle-4-Copy-4" fill="#EFEFEF" transform="translate(85.807743, 14.807743) rotate(45.000000) translate(-85.807743, -14.807743) " x="82.8077426" y="-3.13356781" width="6" height="35.8826208"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <text id="In-Progress" font-family="OpenSans-Regular, Open Sans" font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="11" y="15">In Progress</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
